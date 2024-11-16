@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <style>
+        /* Стили для оформления главной страницы */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.start_using_btn {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.start_using_btn:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to my site!</h1>
+    </div>
+
+    <p>It's my test website created for educating http with views, golang</p>
+    <form action="/login">
+        <button class="start_using_btn" type="submit">Start using</button>
+    </form>
+</body>
+</html>

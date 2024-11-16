@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Авторизация и регистрация</title>
+    <style>.deleteButton {
+      float: right;
+      margin-left: 5px; /* Расстояние между кнопкой и текстом */
+    }</style>
+    <!-- Подключение стилей -->
+  </head>
+  <body>
+    <div class="container">
+        {{range .Users}}
+          <form action="/delete" method="post"> 
+            <p>Login:{{.Login}} Password:{{.Password}}</p>
+            <input type="hidden" name="login" value="{{.Login}}">
+            <button class="deleteButton" type="submit">Delete</button>
+          </form>
+        {{end}}
+      <b><a href="/login">OK</a></b>
+    </div>
+  </body>
+</html>
